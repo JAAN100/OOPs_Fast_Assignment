@@ -1,0 +1,5 @@
+﻿  Man&Women.cpp
+D:\Iliterate.Man&Women\Iliterate.Man&Women\Iliterate.Man&Women\Man&Women.cpp(6,18): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Iliterate.Man&Women\Iliterate.Man&Women\Iliterate.Man&Women\Man&Women.cpp(7,28): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Iliterate.Man&Women\Iliterate.Man&Women\Iliterate.Man&Women\Man&Women.cpp(8,21): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Iliterate.Man&Women.vcxproj -> D:\Iliterate.Man&Women\Iliterate.Man&Women\x64\Debug\Iliterate.Man&Women.exe
