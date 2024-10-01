@@ -1,14 +1,14 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-void displayArea(double A, const int p, const int a, const int b, const int c)
+void displayArea(double A, const double p, const double a, const double b, const double c)
 {
 	A = sqrt(p * (p - a) * (p - b) * (p - c) );
-	cout << "The total area of the given sides of the triangle A is = " << A << endl;
+	cout << "The total area of the given sides of the triangle 'A' is = " << A << endl;
 }
 int main()
 {
-	int a, b, c;
+	double a, b, c;
 	double p = 0;
 	double A = 0;
 	cout << "Enter the length if 'a' side of the triangle :";
