@@ -10,7 +10,7 @@ void displayCylinderVolume(double cylinder, double r, double H, const double Pi)
 	cout << "Enter the height 'H' of the given Cylinder = ";
 	cin >> H;
 	cylinder = Pi * (pow(r, 2)) * H;
-	cout << "The total volume of the cylinder is = " << cylinder  << " m³" << endl;
+	cout << "The total volume of the cylinder is = " << cylinder  << " mï¿½" << endl;
 }
 
 //Calculating prism volume
@@ -24,7 +24,7 @@ void displayPrismVolume(double prism , double Aoft ,double b ,double h ,double H
 	cout << "Enter the height 'H' of the triangle prism = ";
 	cin >> H;
 	prism = Aoft * H;
-	cout << "The Total volume of the prism is = " << prism << " m³" << endl;
+	cout << "The Total volume of the prism is = " << prism << " mï¿½" << endl;
 }
 
 //Calculating sphere volume
@@ -33,7 +33,7 @@ void displaySphereVolume(double sphere , double r ,const double Pi)
 	cout << "Enter the 'r' radius of thee sphere = ";
 	cin >> r;
 	sphere = 4 / 3 * (pow(r ,3)* Pi);
-	cout << "The Total volume of the sphere is = " << sphere << " m³" << endl;
+	cout << "The Total volume of the sphere is = " << sphere << " mï¿½" << endl;
 }
 
 //Calculating volume of the box
@@ -48,7 +48,7 @@ void displayBoxVolume(double box , double l ,double w ,double h)
 	cout << "Enter the 'h' height of the box = ";
 	cin >> h;
 	box = l * w * h;
-	cout << "The Total voulume of the Box is = " << box << " m³" << endl;
+	cout << "The Total voulume of the Box is = " << box << " mï¿½" << endl;
 }
 
 int main()
@@ -130,18 +130,5 @@ int main()
 	{
 		displayCylinderVolume(cylinder, r, H, Pi);
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	return 0;
 }
