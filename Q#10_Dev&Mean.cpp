@@ -48,4 +48,5 @@ int main()
 	cal_mean(ptr, mean ,N);
 	cal_dev(ptr, dev, N ,mean);
 	display_Dev_Mean(dev, mean);
+	delete [] ptr;
 }
