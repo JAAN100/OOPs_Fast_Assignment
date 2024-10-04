@@ -6,12 +6,14 @@ int main()
 	int age ,accident;
 	cout << "Enter your age : ";
 	cin >> age;
+	//If the age is less then 25 Add surcharge 100 Rs
 	if (age < 25)
 	{
 		basic_insure += 100;
 	}
 	cout << "Enter the no of accident the rider make : ";
 	cin >> accident;
+	//Check how many accident make
 	switch (accident)
 	{
 	case  1:
@@ -35,6 +37,7 @@ int main()
 		basic_insure += 575;
 		cout << "The cost of your auto_mobile premium insurance is : " << basic_insure << " Rs" << endl;
 		break;
+		//If the accident exceed from 5 so there is no insurance offer by the company
 	default:
 		cout << "We are unable to offer you an insurance because your no of accident is excede from our policy. " << endl;
 		break;
