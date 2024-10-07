@@ -1,16 +1,17 @@
 ﻿#include <iostream>
+ #include <windows.h> 
 using namespace std;
 int  main()
 {
-	char smile_1 = 58;
-	char smile_2 = 41;
-	for (int i = 1; i <= 768; i++)
+ char smile =1 ;
+ system("CLS");
+	for (int i = 1; i <= 768; i++) // using My laptop vertical resolution 
 	{
-		for (int i = 1; i <= 1366; i++)
+		for (int i = 1; i <= 1366; i++)// using My laptop hrozontal resolution
 		{
-			cout << smile_1 << smile_2 ;
+			cout << smile;
 		}
 
 	}
 
-}
+} 
