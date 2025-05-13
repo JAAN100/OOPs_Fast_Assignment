@@ -12,7 +12,7 @@ template <class T>
 myArray<T> :: myArray(int a)
 {
     arraySize = a;
-    aPtr = new T [arraySize];
+    aPtr = new T [arraySize]();
 }
 
 template <class T>
