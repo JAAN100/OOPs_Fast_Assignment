@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include "myArray.h"
 using namespace std;
 template <class T>
 void getSwap(T & v1 , T & v2)
@@ -19,14 +20,17 @@ void getSwap(T & v1 , T & v2)
     }
 int main()
 {
-    int a1 = 12 , b1 = 24;  
-    char a[] ="abc";
-    char b[] ="ade";
-    char  c[]= "ae";
-    getSwap(a,b);
-    cout << a << " " << b;
-    cout << "\nAfter a and b" <<endl;
-    getSwap(a1 ,b1);
-    cout << a1 << "  " << b1 <<endl;
+    // int a1 = 12 , b1 = 24;  
+    // char a[] ="abc";
+    // char b[] ="ade";
+    // char  c[]= "ae";
+    // getSwap(a,b);
+    // cout << a << " " << b;
+    // cout << "\nAfter a and b" <<endl;
+    // getSwap(a1 ,b1);
+    // cout << a1 << "  " << b1 <<endl;
+    myArray<int> a(12);
+    a[2] = 50;
+    cout << a[2] << " " <<a[0]; 
     return 0;
 }

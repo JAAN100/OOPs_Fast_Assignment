@@ -38,7 +38,7 @@ myArray<T> :: myArray(const myArray& orig)
   for (int i = 0; i < arraySize; i++)
   {
     this->aPtr[i] = orig.aPtr[i];
-  }s
+  }
 }
 
 template <class T>
