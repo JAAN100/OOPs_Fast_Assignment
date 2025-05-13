@@ -15,27 +15,34 @@ public:
     ~myArray();
     int size ()const{ return arraySize;}
     T &operator[](const int&);
-    
-void myArray :: subScriptError()
+};
+template <class T>
+void myArray<T> :: subScriptError()
 {
     cout << "Error invalid input" <<endl;
     exit(0);
 }
-myArray :: myArray(int a)
+
+template <class T>
+myArray<T> :: myArray(int a)
 {
     arraySize = a;
-    aPtr = new T [arraySize];
+    aPtr = new T [arraySize]();
 }
-myArray :: myArray(const myArray& orig)
+
+template <class T>
+myArray<T> :: myArray(const myArray& orig)
 {
   this->arraySize = orig.arraySize;
-  this->aPtr = new int[orig.arraySize]; 
+  this->aPtr = new T[orig.arraySize]; 
   for (int i = 0; i < arraySize; i++)
   {
     this->aPtr[i] = orig.aPtr[i];
-  }
+  }s
 }
-myArray :: ~myArray()
+
+template <class T>
+myArray<T> :: ~myArray()
 {
     if (aPtr != nullptr)
     {
@@ -43,7 +50,9 @@ myArray :: ~myArray()
         aPtr = nullptr;
     }
 }
-T & myArray :: operator[](const int& rhs)
+
+template <class T>
+T & myArray<T>:: operator[](const int& rhs)
 {
     if (rhs < 0 || rhs >= arraySize)
     {
@@ -51,5 +60,4 @@ T & myArray :: operator[](const int& rhs)
     }   
    return aPtr[rhs];   
 }
-};
 #endif
