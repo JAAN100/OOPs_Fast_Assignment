@@ -7,7 +7,6 @@ void getSwap(T & v1 , T & v2)
 {
     T temp;
     temp = v1;
-    v1 =v2;
     v2 = temp; 
 }
 
@@ -29,8 +28,16 @@ int main()
     // cout << "\nAfter a and b" <<endl;
     // getSwap(a1 ,b1);
     // cout << a1 << "  " << b1 <<endl;
-    myArray<int> a(12);
-    a[2] = 50;
-    cout << a[2] << " " <<a[0]; 
+    myArray<int> a(12 , 2);
+    myArray<int> b(5);
+    myArray <myArray<int>> table(5 , a);
+    cout  << table;
+    table [0][0] = 100;
+    cout << table;
+    //a[2] = 50;
+//     b = a;
+//     cout << b;
+//    cout << a;    
     return 0;
 }
+
