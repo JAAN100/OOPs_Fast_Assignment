@@ -119,7 +119,7 @@ int main()
     const int n =6;
     int arr[n] ={5 ,1 , 2, 3, 4, 5};
     Array a;
-    a.getSet(-4);
+    a.getSet(-4) = 22;
     cout << a.getCapacity() << endl;
     for (int i = -4; i <= -1; i++)
     {
