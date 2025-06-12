@@ -1,0 +1,11 @@
+Data of Account 1
+Bank :JS Bank
+Name :Hassan jan
+User_name :hassanjan@gamil.comm
+Accout Number :101
+Account Type :Deposit
+Password :123
+Balance :50000
+
+
+
